@@ -9,7 +9,7 @@ for amount in orders:
         break 
     print(f" Checked Rs {amount}: Small Order")
 
-transactions = [300,343,800,343,-300,-199,400]
+transactions = [310,343,800,343,-300,-199,400]
 income = 0
 for t in transactions:
     if t < 0:
