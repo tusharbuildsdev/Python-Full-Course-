@@ -11,7 +11,7 @@ print(prompt)
 
 # \" and \'
 
-print("He said \"hi\"")
+print("He said \"Hello I am Tushar\"")
 print('It\'s fine')
 
-print("C:\\ Arjit")
+print("C:\\ Tushar")
