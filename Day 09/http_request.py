@@ -18,7 +18,7 @@ post = requests.post(
     "http://httpbin.org/post",
     json=payload,
     headers=headers,
-    timeout=10
+    timeout=20
 
 )
 
