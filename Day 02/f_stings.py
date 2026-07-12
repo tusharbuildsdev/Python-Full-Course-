@@ -3,7 +3,7 @@ f -stings :
 
 """
 
-name = "Arjit"
+name = "Tushar"
 age = 34 
 location = "Lucknow"
 
