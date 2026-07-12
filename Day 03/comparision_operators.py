@@ -12,7 +12,7 @@ print(x == 5)
 
 
 # Comparision can also work on strings
-print("apple" < "banana")
+print("apple" < "grapes")
 print("Zoo" < "apple")
 print("cat" == "Cat")
 #Comparing across types
