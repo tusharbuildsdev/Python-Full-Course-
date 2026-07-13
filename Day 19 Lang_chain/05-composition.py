@@ -20,3 +20,44 @@ from langchain_core.runnables import (
     RunnableParallel,
     RunnablePassthrough,
 )
+
+word_count = RunnableLambda(lambda s: len(s.split()))
+print("RunnableLambda word_count", word_count.invoke("one two three"))
+
+
+analyse = RunnableLambda(
+    upper = RunnableLambda(str.upper),
+    words = RunnableLambda(lambda s: len(s.split())),
+    chars=RunnableLambda(len)
+
+)
+print("RunnableParallel runs all branches on one input:")
+print(" ", analyse.invoke("langchain is fun"))
+
+keep_and_shout = RunnableParallel(
+    original = RunnablePassthrough(),
+    shout = RunnableLambda(str.upper)
+)
+
+print("Runable Passthrough")
+print(keep_and_shout.invoke("hello"))
+
+def fake_retriever(question: str) -> str:
+    return "Refunds are processed within 5-7 business days to the original payment method."
+
+prompt = ChatPromptTemplate.from_messages([
+    ("system", "Answer ONLY from this context:\n{context}"),
+    ("human", "{question}"),
+])
+rag_inputs = {
+    "context": RunnableLambda(fake_retriever),   
+    "question": RunnablePassthrough(),    
+}
+rag_prompt_chain = rag_inputs | prompt           
+
+built = rag_prompt_chain.invoke("How long do refunds take?")
+print("The classic RAG wiring, built offline (question -> filled prompt):")
+for m in built.to_messages():
+    print(f"  [{m.type:>6}] {m.content}")
+print()
+
