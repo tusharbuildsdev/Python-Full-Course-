@@ -2,12 +2,26 @@ from dotenv import load_dotenv
 import os
 
 from langchain_groq import ChatGroq
-
 from langchain_core.prompts import ChatPromptTemplate
+
+# Load environment variables
 load_dotenv()
-MODEL_NAME = "llama-3.1-8b-instant"
+
+# Check API Key
+if not os.getenv("GROQ_API_KEY"):
+    raise ValueError("❌ GROQ_API_KEY not found in .env file")
+
+# Configuration
+MODEL_NAME = "llama-3.3-70b-versatile"
 TEMPERATURE = 0
 
+# Create LLM
+llm = ChatGroq(
+    model=MODEL_NAME,
+    temperature=TEMPERATURE
+)
+
+# Prompt Template
 prompt = ChatPromptTemplate.from_messages([
     (
         "system",
@@ -15,30 +29,18 @@ prompt = ChatPromptTemplate.from_messages([
         You are a helpful AI assistant.
 
         Rules:
+        - Give clear and accurate answers.
         - Never repeat the same sentence.
         - If you don't know something, say "I don't know."
-        - Keep answers concise.
-        - Do not make up information.
+        - Keep your answers short unless the user asks for details.
+        - Do not make up facts.
         """
     ),
     ("human", "{question}")
 ])
-llm = ChatGroq(
-    model="llama-3.1-8b-instant",
-    temperature=0
-)
 
+# Create Chain
 chain = prompt | llm
-
-# Check API Key
-if not os.getenv("GROQ_API_KEY"):
-    raise ValueError("GROQ_API_KEY not found in .env file")
-
-# Create LLM
-llm = ChatGroq(
-    model="llama-3.1-8b-instant",
-    temperature=0
-)
 
 print("=" * 50)
 print("🤖 Welcome to CLI Chatbot")
@@ -48,23 +50,24 @@ print("=" * 50)
 while True:
     user_input = input("\nYou: ").strip()
 
+    # Exit
     if user_input.lower() == "exit":
         print("\n👋 Goodbye!")
         break
 
+    # Empty Input
     if not user_input:
         print("⚠️ Please enter a message.")
         continue
 
     try:
-        response = llm.invoke(user_input)
-        print(f"\nBot: {response.content}")
+        response = chain.invoke(
+            {
+                "question": user_input
+            }
+        )
+
+        print(f"\n🤖 Bot: {response.content}")
 
     except Exception as e:
         print(f"\n❌ Error: {e}")
-
-    response = chain.invoke({
-    "question": user_input
-})
-
-print(response.content)
