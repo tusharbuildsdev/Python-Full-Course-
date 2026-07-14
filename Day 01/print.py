@@ -6,7 +6,7 @@ Run:
 """
 
 # Multiple values: print() puts a space between them by default
-print("Score:", 42, "points")
+print("Score:", 52, "points")
 
 # sep=... changes what goes BETWEEN the values
 print("2024", "06", "10", sep="-")    # 2024-06-10
