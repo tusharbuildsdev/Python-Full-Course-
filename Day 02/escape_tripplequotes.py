@@ -1,7 +1,7 @@
 
 print("Line 1\nLine 2 ")
 
-print("Name:\tArjit ")
+print("Name:\tTushar ")
 
 prompt = """You are a helpful assistant.
 Summarise the text below in 3 bullet points
