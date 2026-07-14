@@ -3,7 +3,7 @@ String Method - Built in tools for cleaning and transforming
 
 """
 
-text = "Arjit Verma"
+text = "Tushar Verma"
 print(text.upper())
 print(text.lower())
 print(text.title())
