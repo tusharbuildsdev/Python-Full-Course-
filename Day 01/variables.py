@@ -7,7 +7,7 @@ Run:
 
 # Assign values to names with '='
 age = 25
-name = "Tushar"
+name = "Tushar Verma"
 price = 199.99
 
 # Use the names anywhere you'd use the value
