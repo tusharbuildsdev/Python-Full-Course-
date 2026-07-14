@@ -6,7 +6,7 @@ Run:
 """
 
 # ----- Valid names (snake_case is the Python convention) -----
-first_name = "Tushar"
+first_name = "Tushar Verma"
 total_price = 199.99
 is_active = True
 _internal = 0
