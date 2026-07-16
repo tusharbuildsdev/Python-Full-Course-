@@ -15,3 +15,6 @@ for t in (multiply, word_count):
     print(f"description : {t.description}")
     print(f"args        : {t.args}")
     print("-"*60)
+
+print(multiply.invoke({"a":6,"b":7}))
+print (word_count.invoke({"text":"tools let model act"}))
