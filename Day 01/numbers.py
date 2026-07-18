@@ -9,7 +9,7 @@ print("Type of 3.14", type(3.14))
 print("Type of 6/2", type(6/2))
 
 print(0.1 + 0.2)
-print(2 ** 100)
+print(2 ** 500)
 
 print("Underscore", 1_000_000)
 print("Hex",0xFF)
