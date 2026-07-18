@@ -22,6 +22,6 @@ print(full)
 print("ha" * 4)
 print("=" * 20)
 
-age = 25
+age = 21
 
 print("Age:" + str(age))
