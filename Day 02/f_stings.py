@@ -4,7 +4,7 @@ f -stings :
 """
 
 name = "Tushar Verma"
-age = 34 
+age = 21 
 location = "Lucknow"
 
 print("You are " + str(age) + " Years old")
