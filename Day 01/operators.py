@@ -16,7 +16,7 @@ print("17 % 5 =", 17 % 5)   # 2
 
 
 # A classic use of modulo: is a number even?  (even numbers have remainder 0)
-print("Is 10 even? ->", 10 % 2 == 0)   # True
+print("Is 10 even? ->", 20 % 2 == 0)   # True
 print("Is 7 even?  ->", 7 % 2 == 0)    # False
 
 
