@@ -18,7 +18,7 @@ print("...", end="")
 print(" done")                          # all on one line: Loading... done
 
 # Mixing text and numbers is fine — commas convert each value to text
-age = 25
+age = 21
 print("I am", age, "years old")
 
 # An empty print() just prints a blank line
