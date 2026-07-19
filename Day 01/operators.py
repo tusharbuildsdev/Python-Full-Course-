@@ -25,5 +25,5 @@ print("3 ** 2 =", 3 ** 2)   # 9
 print("2 ** 10 =", 2 ** 10)  # 1024
 
 # ----- Precedence: Python does ** , then * / // % , then + - -----
-print("2 + 3 * 4 =", 2 + 3 * 4)      # 14 (not 20)
-print("(2 + 3) * 4 =", (2 + 3) * 4)  # 20 (parentheses win)
+print("20 + 3 * 4 =", 2 + 3 * 4)      # 14 (not 20)
+print("(20 + 3) * 4 =", (2 + 3) * 4)  # 20 (parentheses win)
