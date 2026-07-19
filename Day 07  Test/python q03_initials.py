@@ -5,7 +5,7 @@ def initial(full_name):
         result += word[0].upper() + "."
     return result
 if __name__ == "__main__":
-    print(initial("Tushar ravi rohan"))
+    print(initial("Tushar Ravi Rohan"))
     print(initial("tushar verma"))
 
 
