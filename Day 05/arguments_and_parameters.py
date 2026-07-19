@@ -15,7 +15,7 @@ def book_ticket(name,seat,price):
     """Print a booking line"""
     print(f"{name} -> Seat : {seat} (Rs {price})")
 
-book_ticket("Arjit","3B",9000)
+book_ticket("Tushar","3B",9000)
 
 orders = [101,102,103]
 
