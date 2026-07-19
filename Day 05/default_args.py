@@ -13,7 +13,7 @@ def book_tickets(name,seat,price):
     print(f"{name} --> seat {seat} (Rs {price})")
 
 book_tickets("Tushar","3b",8999)
-book_tickets(name="Arjit",price=8999,seat="3B")
+book_tickets(name="Tushar",price=8999,seat="3B")
 book_tickets("Chetan",price=2323,seat="4F")
 
 
