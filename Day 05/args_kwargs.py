@@ -17,5 +17,5 @@ def make_user(**kwargs):
     print(" kwargs is a dict", kwargs)
     return kwargs
 
-make_user(name="Tushar", age=34,city="Lucknow")
+make_user(name="Tushar", age=21,city="Lucknow")
 make_user(name="Ben")
