@@ -5,7 +5,7 @@ Default values
 def greet(name,greeting = "Hi"):
     print(f"{greeting} , {name}")
 
-greet("Arjit")
+greet("Tushar")
 greet("Arjit","Welcome")
 
 #Keyword arguments
