@@ -6,7 +6,7 @@ def greet(name,greeting = "Hi"):
     print(f"{greeting} , {name}")
 
 greet("Tushar")
-greet("Arjit","Welcome")
+greet("Tushar","Welcome")
 
 #Keyword arguments
 def book_tickets(name,seat,price):
