@@ -20,7 +20,7 @@ print(f"Total Income : {income}")
 
 
 CORRECT_PIN = 1234
-attempt_left = 3
+attempt_left = 4
 
 while attempt_left > 0:
     entered_pin = int(input(f"Enter pin . {attempt_left} attempts left :" ).strip())
