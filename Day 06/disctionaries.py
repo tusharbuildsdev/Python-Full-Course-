@@ -17,7 +17,7 @@ print("Missing values" , student.get("college","n/a"))
 
 
 student["email"] ="abc@gmail.com"
-student["age"] = 35
+student["age"] = 21
 print("Student After Update", student)
 
 removed_item = student.pop("marks")
