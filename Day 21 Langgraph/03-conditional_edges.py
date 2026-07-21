@@ -83,3 +83,9 @@ builder.add_conditional_edges(
         "general": "general",
     },
 )
+
+builder.add_edge("billing", END)
+builder.add_edge("technical", END)
+builder.add_edge("general", END)
+
+graph = builder.compile()
