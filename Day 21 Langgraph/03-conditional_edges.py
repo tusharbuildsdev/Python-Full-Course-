@@ -89,3 +89,14 @@ builder.add_edge("technical", END)
 builder.add_edge("general", END)
 
 graph = builder.compile()
+for msg in [
+    "I want a refund for my last invoice",
+    "The app keeps crashing on login",
+    "Do you have an office in Pune?",
+]:
+    result = graph.invoke({"message": msg, "category": "", "reply": ""})
+    print(f"  [{result['category']:9}] {result['reply']}")
+    print()
+
+print("Same compiled graph, three different routes -- decided at runtime by the")
+print("data. That branching is exactly what LCEL's straight | cannot express.")
