@@ -1,5 +1,5 @@
 """
-05 - Reducers: make state ADD UP instead of overwrite.
+04 - Reducers: make state ADD UP instead of overwrite.
 
 By default, when a node returns {"key": value}, that value REPLACES the old
 one. Fine for a str or int. But for a LIST you're building up (a chat history,
