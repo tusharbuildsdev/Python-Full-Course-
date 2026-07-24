@@ -74,3 +74,26 @@ def build_pipeline():
     g.add_edge("writer", "editor")      # draft -> editor
     g.add_edge("editor", END)           # final -> done
     return g.compile()
+def main() -> None:
+    print("=" * 66)
+    print("Sequential agents: researcher -> writer -> editor")
+    print("=" * 66)
+
+    pipeline = build_pipeline()
+    topic = "why Python is popular for AI"
+    result = pipeline.invoke({"topic": topic, "research": "", "draft": "", "final": ""})
+
+    print("\n" + "=" * 66)
+    print("FINAL OUTPUT")
+    print("=" * 66)
+    print(result["final"])
+
+    print(
+        "\nWhat happened: the state carried the hand-off. The writer never saw the\n"
+        "topic 'raw' -- it saw the researcher's notes. Each agent trusted the\n"
+        "previous one's output. That's an assembly line."
+    )
+
+
+if __name__ == "__main__":
+    main()
