@@ -20,3 +20,18 @@ from dotenv import load_dotenv
 from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_groq import ChatGroq
 from langgraph.graph import StateGraph, START, END
+llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0)
+
+
+# --- Shared state: the "desk" the work moves across --------------------------
+class State(TypedDict):
+    topic: str      # the input (set by us)
+    research: str   # filled by the researcher
+    draft: str      # filled by the writer
+    final: str      # filled by the editor
+def _ask(role_system: str, user: str) -> str:
+    """Run one LLM call as a given role. This is the whole 'agent' -- a role + a call."""
+    reply = llm.invoke([SystemMessage(content=role_system), HumanMessage(content=user)])
+    return reply.content.strip()
+def researcher(state: State) -> dict:
+    
