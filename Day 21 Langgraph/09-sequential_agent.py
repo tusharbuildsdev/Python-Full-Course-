@@ -34,4 +34,43 @@ def _ask(role_system: str, user: str) -> str:
     reply = llm.invoke([SystemMessage(content=role_system), HumanMessage(content=user)])
     return reply.content.strip()
 def researcher(state: State) -> dict:
-    
+     system = (
+        "You are a Researcher. Given a topic, list 3 short factual bullet points "
+        "a writer could use. Bullets only, no intro."
+    )
+     
+     research = _ask(system, f"Topic: {state['topic']}")
+     print("\n[researcher] produced notes:\n" + research)
+     return {"research": research}
+
+def writer(state: State) -> dict:
+    system = (
+        "You are a Writer. Using ONLY the research notes provided, write one "
+        "engaging paragraph (3-4 sentences) for a general audience."
+    )
+    draft = _ask(system, f"Topic: {state['topic']}\n\nResearch notes:\n{state['research']}")
+    print("\n[writer] produced a draft:\n" + draft)
+    return {"draft": draft}
+
+
+def editor(state: State) -> dict:
+    system = (
+        "You are an Editor. Improve clarity and flow of the draft. Fix any awkward "
+        "wording. Return ONLY the polished paragraph."
+    )
+    final = _ask(system, state["draft"])
+    print("\n[editor] produced the final:\n" + final)
+    return {"final": final}
+
+def build_pipeline():
+    """Wire the three agents into a straight line. This IS the sequential pattern."""
+    g = StateGraph(State)
+    g.add_node("researcher", researcher)
+    g.add_node("writer", writer)
+    g.add_node("editor", editor)
+
+    g.add_edge(START, "researcher")     # topic -> researcher
+    g.add_edge("researcher", "writer")  # research -> writer
+    g.add_edge("writer", "editor")      # draft -> editor
+    g.add_edge("editor", END)           # final -> done
+    return g.compile()
