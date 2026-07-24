@@ -14,3 +14,12 @@ Run it:
 """
 
 from typing import TypedDict
+class State(TypedDict):
+    topic: str
+    draft: str
+    log: list
+
+def writer(state: State) -> dict:
+    """Agent #1: turns a topic into a rough one-liner."""
+    draft = f"{state['topic']} is useful because it saves people time."
+    return {"draft": draft, "log": ["writer wrote a rough draft"]}
