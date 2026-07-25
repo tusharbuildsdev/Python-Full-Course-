@@ -1,4 +1,4 @@
-# Zero.Shot
+# Zero-Shot
 
 Standalone program from **Day 12** of the Python Complete Course.
 

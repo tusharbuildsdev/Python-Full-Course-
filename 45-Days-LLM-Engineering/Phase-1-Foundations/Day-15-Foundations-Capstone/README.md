@@ -1,4 +1,4 @@
-# Day 15 Test
+# Day 15 — Foundations Capstone
 
 Practical Python mini-projects for validation, billing, OTPs, coupons, and UPI-style flows.
 

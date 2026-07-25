@@ -1,4 +1,4 @@
-# Day 17 Streamlit
+# Day 17 — Streamlit Interfaces
 
 Streamlit applications for layouts, widgets, files, state, caching, and chat interfaces.
 

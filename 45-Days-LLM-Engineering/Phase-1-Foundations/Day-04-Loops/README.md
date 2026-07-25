@@ -1,4 +1,4 @@
-# Day 04
+# Day 04 — Loops
 
 Looping constructs: `for`, `while`, ranges, nested loops, and loop control.
 

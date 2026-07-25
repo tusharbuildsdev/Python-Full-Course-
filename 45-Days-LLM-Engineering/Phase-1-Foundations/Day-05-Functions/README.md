@@ -1,4 +1,4 @@
-# Day 05
+# Day 05 — Functions
 
 Functions, parameters, return values, default arguments, scopes, and flexible arguments.
 

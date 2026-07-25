@@ -1,4 +1,4 @@
-# Day 06
+# Day 06 — Collections
 
 Core Python collections: lists, tuples, sets, and dictionaries.
 
@@ -12,7 +12,7 @@ python "<program-file>.py"
 
 ## Programs
 
-- `disctionaries.py` — Disctionaries.
+- `dictionaries.py` — Dictionaries.
 - `lists.py` — Lists.
 - `sets.py` — Sets.
 - `tuples.py` — Tuples.

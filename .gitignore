@@ -1,4 +1,23 @@
 .env
+.env.*
+!.env.example
+
+# Python environments and generated files
+.venv/
 venv/
 __pycache__/
+*.py[cod]
+*.egg-info/
+
+# Local vector stores and app data
 chroma_store/
+*.sqlite3
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Legacy per-lesson Git metadata (kept locally, not part of this repository)
+_git-history/

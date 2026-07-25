@@ -1,4 +1,4 @@
-# F Stings
+# F-Strings
 
 Standalone program from **Day 02** of the Python Complete Course.
 
@@ -7,10 +7,10 @@ Standalone program from **Day 02** of the Python Complete Course.
 From this folder, run:
 
 ```powershell
-python "f_stings.py"
+python "f_strings.py"
 ```
 
 ## Source
 
-- `f_stings.py`
+- `f_strings.py`
 

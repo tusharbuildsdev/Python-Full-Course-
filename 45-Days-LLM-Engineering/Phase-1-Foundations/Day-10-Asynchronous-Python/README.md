@@ -1,4 +1,4 @@
-# Day 10
+# Day 10 — Asynchronous Python
 
 Asynchronous programming, coroutines, blocking work, and concurrent execution.
 
@@ -12,7 +12,7 @@ python "<program-file>.py"
 
 ## Programs
 
-- `blockking_problem.py` — Blockking Problem.
+- `blocking_problem.py` — Blocking Problem.
 - `first_coroutine.py` — First Coroutine.
 - `real_http_async.py` — Real Http Async.
 - `sequence_vs_concurrent.py` — Sequence Vs Concurrent.

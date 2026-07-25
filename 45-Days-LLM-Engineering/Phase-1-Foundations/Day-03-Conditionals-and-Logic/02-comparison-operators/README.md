@@ -1,4 +1,4 @@
-# Comparision Operators
+# Comparison Operators
 
 Standalone program from **Day 03** of the Python Complete Course.
 
@@ -7,10 +7,10 @@ Standalone program from **Day 03** of the Python Complete Course.
 From this folder, run:
 
 ```powershell
-python "comparision_operators.py"
+python "comparison_operators.py"
 ```
 
 ## Source
 
-- `comparision_operators.py`
+- `comparison_operators.py`
 

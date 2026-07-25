@@ -1,4 +1,4 @@
-# Day 11
+# Day 11 — API Development Basics
 
 Type hints, Pydantic models, environment variables, and first LLM API calls.
 

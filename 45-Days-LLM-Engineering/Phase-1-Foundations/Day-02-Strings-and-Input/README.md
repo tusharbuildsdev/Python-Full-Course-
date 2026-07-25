@@ -1,4 +1,4 @@
-# Day 02
+# Day 02 — Strings and Input
 
 Working with strings, indexing, slicing, formatting, escaping, and type conversion.
 
@@ -13,7 +13,7 @@ python "<program-file>.py"
 ## Programs
 
 - `escape_tripplequotes.py` — Escape Tripplequotes.
-- `f_stings.py` — F Stings.
+- `f_strings.py` — F-Strings.
 - `len_input_typecast.py` — Len Input Typecast.
 - `string_indexing.py` — String Indexing.
 - `string_methods.py` — String Methods.

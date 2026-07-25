@@ -1,4 +1,4 @@
-# Store. Vector
+# Store Vector
 
 Standalone program from **Day 16** of the Python Complete Course.
 
@@ -7,10 +7,10 @@ Standalone program from **Day 16** of the Python Complete Course.
 From this folder, run:
 
 ```powershell
-python "store._vector.py"
+python "store_vector.py"
 ```
 
 ## Source
 
-- `store._vector.py`
+- `store_vector.py`
 

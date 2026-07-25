@@ -1,4 +1,4 @@
-# Day 03
+# Day 03 — Conditionals and Logic
 
 Boolean logic, comparison operators, conditional statements, and truthiness.
 
@@ -13,7 +13,7 @@ python "<program-file>.py"
 ## Programs
 
 - `booleans.py` — Booleans.
-- `comparision_operators.py` — Comparision Operators.
+- `comparison_operators.py` — Comparison Operators.
 - `if.py` — If.
 - `logical_operators.py` — Logical Operators.
 - `nested_conditionals.py` — Nested Conditionals.

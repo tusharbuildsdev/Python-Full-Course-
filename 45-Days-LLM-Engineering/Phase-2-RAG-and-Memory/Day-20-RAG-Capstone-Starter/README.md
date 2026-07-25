@@ -1,4 +1,4 @@
-# Day 20 Stater Kit
+# Day 20 — RAG Capstone Starter
 
 Starter-kit workspace reserved for upcoming project files.
 

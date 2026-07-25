@@ -1,4 +1,4 @@
-# Day 21 Langgraph
+# Day 21 — LangGraph Fundamentals
 
 LangGraph state, nodes, reducers, conditional edges, sequential agents, and multi-agent concepts.
 

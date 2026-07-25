@@ -1,4 +1,4 @@
-# Day 19 Lang_chain
+# Day 19 — LangChain
 
 LangChain fundamentals: prompts, chains, memory, RAG, tools, tool loops, and Streamlit.
 
@@ -18,7 +18,7 @@ python "<program-file>.py"
 - `04_structured_output.py` — 04 Structured Output.
 - `05-composition.py` — 05 Composition.
 - `06-history.py` — 06 History.
-- `07-spilltters.py` — 07 Spilltters.
+- `07-splitters.py` — 07 Splitters.
 - `08-vectordb.py` — 08 Vectordb.
 - `09-rag_chain.py` — 09 Rag Chain.
 - `10-streamlit.py` — 10 Streamlit.

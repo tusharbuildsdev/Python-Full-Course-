@@ -1,4 +1,4 @@
-# Day 01
+# Day 01 — Python Fundamentals
 
 Python basics: output, variables, numeric values, operators, comments, and naming conventions.
 

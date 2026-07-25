@@ -1,4 +1,4 @@
-# Day 16
+# Day 16 — RAG Fundamentals
 
 Retrieval-augmented generation (RAG), vector storage, retrieval, and persisted indexes.
 
@@ -15,7 +15,7 @@ python "<program-file>.py"
 - `persist_and_reload.py` — Persist And Reload.
 - `rag_chat.py` — Rag Chat.
 - `retrieve.py` — Retrieve.
-- `store._vector.py` — Store. Vector.
+- `store_vector.py` — Store Vector.
 
 All examples are formatted with the project’s shared Python style.
 

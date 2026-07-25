@@ -1,4 +1,4 @@
-# Blockking Problem
+# Blocking Problem
 
 Standalone program from **Day 10** of the Python Complete Course.
 
@@ -7,10 +7,10 @@ Standalone program from **Day 10** of the Python Complete Course.
 From this folder, run:
 
 ```powershell
-python "blockking_problem.py"
+python "blocking_problem.py"
 ```
 
 ## Source
 
-- `blockking_problem.py`
+- `blocking_problem.py`
 

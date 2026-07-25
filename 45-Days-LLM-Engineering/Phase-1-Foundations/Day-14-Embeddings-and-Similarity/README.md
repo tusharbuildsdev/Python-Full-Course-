@@ -1,4 +1,4 @@
-# Day 14
+# Day 14 — Embeddings and Similarity
 
 Embeddings, vector coordinates, and similarity comparison.
 

@@ -1,4 +1,4 @@
-# Day 18 DOCCHAT
+# Day 18 — Document Chat
 
 A document-chat application with file loading, chunking, embeddings, retrieval, and an LLM.
 

@@ -1,4 +1,4 @@
-# Day 07  Test
+# Day 07 — Python Practice Test
 
 Practice exercises that apply the fundamentals from the first six days.
 
@@ -13,12 +13,12 @@ python "<program-file>.py"
 ## Programs
 
 - `python q01_seconds_to_hms.py` — Python Q01 Seconds To Hms.
-- `python q02_bmicalculator.py` — Python Q02 Bmicalculator.
+- `python q02_bmi_calculator.py` — Python Q02 BMI Calculator.
 - `python q03_initials.py` — Python Q03 Initials.
 - `python q04_string_palindrome.py` — Python Q04 String Palindrome.
-- `python q05_clean_title..py` — Python Q05 Clean Title..
+- `python q05_clean_title.py` — Python Q05 Clean Title..
 - `python q06_grade_calculator.py` — Python Q06 Grade Calculator.
-- `python q07_leap_yearcheck.py` — Python Q07 Leap Yearcheck.
+- `python q07_leap_year_check.py` — Python Q07 Leap Year Check.
 - `python q08_digit_sum.py` — Python Q08 Digit Sum.
 - `python q09_pattern_triangle.py` — Python Q09 Pattern Triangle.
 - `python q10_fibonacci.py` — Python Q10 Fibonacci.

@@ -1,4 +1,4 @@
-# Lamda Function
+# Inheritance
 
 Standalone program from **Day 08** of the Python Complete Course.
 
@@ -7,10 +7,10 @@ Standalone program from **Day 08** of the Python Complete Course.
 From this folder, run:
 
 ```powershell
-python "lamda_function.py"
+python "inheritance.py"
 ```
 
 ## Source
 
-- `lamda_function.py`
+- `inheritance.py`
 

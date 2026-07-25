@@ -1,4 +1,4 @@
-# Day 12
+# Day 12 — Prompt Engineering
 
 Prompt-engineering concepts: system prompts, few-shot examples, temperature, tokens, and context.
 
@@ -19,7 +19,7 @@ python "<program-file>.py"
 - `first_calls.py` — First Calls.
 - `system_prompt.py` — System Prompt.
 - `temperature.py` — Temperature.
-- `zero.shot.py` — Zero.Shot.
+- `zero.shot.py` — Zero-Shot.
 
 All examples are formatted with the project’s shared Python style.
 

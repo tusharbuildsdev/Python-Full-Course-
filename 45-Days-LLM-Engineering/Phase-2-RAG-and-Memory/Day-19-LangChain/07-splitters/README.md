@@ -1,4 +1,4 @@
-# 07 Spilltters
+# 07 Splitters
 
 Standalone program from **Day 19 Lang_chain** of the Python Complete Course.
 
@@ -7,10 +7,10 @@ Standalone program from **Day 19 Lang_chain** of the Python Complete Course.
 From this folder, run:
 
 ```powershell
-python "07-spilltters.py"
+python "07-splitters.py"
 ```
 
 ## Source
 
-- `07-spilltters.py`
+- `07-splitters.py`
 

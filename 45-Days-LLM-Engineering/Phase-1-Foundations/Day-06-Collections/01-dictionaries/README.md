@@ -1,4 +1,4 @@
-# Disctionaries
+# Dictionaries
 
 Standalone program from **Day 06** of the Python Complete Course.
 
@@ -7,10 +7,10 @@ Standalone program from **Day 06** of the Python Complete Course.
 From this folder, run:
 
 ```powershell
-python "disctionaries.py"
+python "dictionaries.py"
 ```
 
 ## Source
 
-- `disctionaries.py`
+- `dictionaries.py`
 

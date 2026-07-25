@@ -1,4 +1,4 @@
-# Inheritence
+# Lambda Function
 
 Standalone program from **Day 08** of the Python Complete Course.
 
@@ -7,10 +7,10 @@ Standalone program from **Day 08** of the Python Complete Course.
 From this folder, run:
 
 ```powershell
-python "inheritence.py"
+python "lambda_function.py"
 ```
 
 ## Source
 
-- `inheritence.py`
+- `lambda_function.py`
 

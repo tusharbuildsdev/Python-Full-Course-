@@ -7,10 +7,10 @@ Standalone program from **Day 07  Test** of the Python Complete Course.
 From this folder, run:
 
 ```powershell
-python "python q05_clean_title..py"
+python "python q05_clean_title.py"
 ```
 
 ## Source
 
-- `python q05_clean_title..py`
+- `python q05_clean_title.py`
 
