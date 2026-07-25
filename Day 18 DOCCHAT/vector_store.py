@@ -96,6 +96,4 @@ if __name__ == "__main__":
         "how long does getting money back take?",
         k=2,
     ):
-        print(
-            f"{m['similarity']:.3f}  [{m['source']}]  {m['document']}"
-        )
+        print(f"{m['similarity']:.3f}  [{m['source']}]  {m['document']}")

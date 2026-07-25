@@ -6,15 +6,21 @@ from file_loader import load_text
 from chunker import chunk_text
 from vector_store import VectorStore
 from rag import build_messages
-from llm import make_client,stream_answer
+from llm import make_client, stream_answer
+
 load_dotenv()
 st.set_page_config(page_title="Chat with Docs", page_icon="")
+
+
 @st.cache_resource
 def get_embedder():
     return SentenceTransformer(config.EMBED_MODEL_NAME)
+
+
 @st.cache_resource
 def get_client():
     return make_client()
+
 
 embedder = get_embedder()
 client = get_client()
@@ -22,23 +28,34 @@ client = get_client()
 if "store" not in st.session_state:
     st.session_state.store = VectorStore(embedder)
 if "messages" not in st.session_state:
-    st.session_state.messages=[]
+    st.session_state.messages = []
 if "indexed" not in st.session_state:
-    st.session_state.indexed=[]
-    
+    st.session_state.indexed = []
+
 store = st.session_state.store
-    
+
 st.sidebar.header("⚙️ Model settings")
 model = st.sidebar.selectbox("Model", config.GROQ_MODELS)
 temperature = st.sidebar.slider(
-    "Temperature", 0.0, 1.0, config.DEFAULT_TEMPERATURE, 0.05,
+    "Temperature",
+    0.0,
+    1.0,
+    config.DEFAULT_TEMPERATURE,
+    0.05,
     help="Low = focused and factual. High = more creative.",
 )
 max_tokens = st.sidebar.slider(
-    "Max answer length (tokens)", 128, 2048, config.DEFAULT_MAX_TOKENS, 64,
+    "Max answer length (tokens)",
+    128,
+    2048,
+    config.DEFAULT_MAX_TOKENS,
+    64,
 )
 top_k = st.sidebar.slider(
-    "Chunks to retrieve (k)", 1, 8, config.TOP_K,
+    "Chunks to retrieve (k)",
+    1,
+    8,
+    config.TOP_K,
     help="How many document snippets to feed the model per question.",
 )
 
@@ -47,7 +64,7 @@ if st.sidebar.button("🗑️ Clear documents & chat", width="stretch"):
     store.reset()
     st.session_state.indexed = []
     st.session_state.messages = []
-    st.rerun()   
+    st.rerun()
 
 st.sidebar.caption(f"Indexed chunks: {store.count()}")
 st.title("📄 Chat With Your Documents")
@@ -110,4 +127,4 @@ if question:
                 )
                 st.caption(m["document"])
 
-    st.session_state.messages.append({"role": "assistant", "content":reply})
+    st.session_state.messages.append({"role": "assistant", "content": reply})

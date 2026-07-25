@@ -1,0 +1,16 @@
+# Nested Loop
+
+Standalone program from **Day 04** of the Python Complete Course.
+
+## Run
+
+From this folder, run:
+
+```powershell
+python "nested_loop.py"
+```
+
+## Source
+
+- `nested_loop.py`
+
