@@ -1,4 +1,4 @@
-print(len("Tushar Verma"))
+print(len("Tushar"))
 print(len(" "))
 
 
