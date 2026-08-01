@@ -10,7 +10,7 @@ print(prompt)
 
 # \" and \'
 
-print('He said "Hello I am Tushar"')
+print('He said "Hello I am Tushar Verma"')
 print("It's fine")
 
 print("C:\\ Tushar Verma")
