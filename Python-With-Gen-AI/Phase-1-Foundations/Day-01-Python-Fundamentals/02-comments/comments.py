@@ -14,7 +14,7 @@ print("Comments don't affect output")  # <- this is an inline comment
 # like this block.
 
 # Good comments explain WHY, not the obvious WHAT:
-total = 500
+total = 1000
 total = total - 20  # apply the flat ₹10 first-order discount
 
 print("total after discount:", total)
