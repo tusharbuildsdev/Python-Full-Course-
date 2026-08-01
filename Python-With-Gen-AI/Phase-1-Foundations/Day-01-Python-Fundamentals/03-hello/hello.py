@@ -1,4 +1,4 @@
 print("Hello , world!!")
 print(2026)
 print(3 * 100)
-print("The Answer is", 2 + 2)
+print("The Answer is", 20 + 20)
