@@ -3,7 +3,7 @@ Strings - creating and combining text
 """
 
 greeting = "Hello"
-name = "Tushar"
+name = "Tushar Verma"
 
 print(greeting)
 print(name)
