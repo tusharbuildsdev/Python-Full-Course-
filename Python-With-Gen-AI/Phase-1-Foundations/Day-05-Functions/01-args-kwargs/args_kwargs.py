@@ -19,5 +19,5 @@ def make_user(**kwargs):
     return kwargs
 
 
-make_user(name="Tushar", age=21, city="Lucknow")
-make_user(name="Ben")
+make_user(name="Tushar Verma", age=21, city="Lucknow")
+make_user(name="Ayush")
