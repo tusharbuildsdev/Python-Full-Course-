@@ -15,7 +15,7 @@ print(type(fake_bool))
 
 # Boolean usually comes from questions
 age = 20
-is_adult = age >= 21
+is_adult = age >= 25
 print("Is adult?", is_adult)
 
 # Task : Take user age input and tell if they
