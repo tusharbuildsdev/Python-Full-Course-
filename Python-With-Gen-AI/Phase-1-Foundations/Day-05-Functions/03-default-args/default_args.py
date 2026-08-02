@@ -8,7 +8,7 @@ def greet(name, greeting="Hi"):
 
 
 greet("Tushar")
-greet("Tushar", "Welcome")
+greet("Tushar Verma", "Welcome")
 
 
 # Keyword arguments
