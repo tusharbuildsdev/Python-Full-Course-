@@ -21,4 +21,4 @@ else:
 
 # in
 print("a" in "Dog")
-print("a" not in "cat")
+print("a" not in "Dog")
