@@ -1,4 +1,4 @@
-word = "Hello"
+word = "HELLO"
 
 print("first char [0] =>", word[0])  # H
 print("first char [2] =>", word[2])
